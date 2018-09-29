@@ -1,0 +1,58 @@
+.container {
+  background: #EEE3D9;
+  max-width: 60%;
+  display: block;
+  margin: auto;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+#title {
+  color: #864A39;
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+  color: #70323E;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+}
+
+input {
+  text-align: center;
+  margin: 0 auto 1rem auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "content";
+  justify-items: center;
+  align-items: center;
+}
+
+.content {
+  grid-area: content;
+  text-align: center;
+}
+
+button {
+  width: 60%;
+  margin-top: 1rem;
+  height: 4rem;
+  border-radius: 1rem;
+  font-size: 16px;
+  font-weight: 650;
+  text-decoration: underline;
+  background: #70323E;
+}
+
+button:hover {
+    background: #9F756A;
+  }
+
+

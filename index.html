@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey for freeCodeCamp</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="title">The magnifiscent Survey!</h1>
+        <div class="description">
+          <p id="description">This is a survey form to collect all your data and keep it from now to the end of times.</p>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="content">
+          <form id="survey-form" action="submit">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Your name goes here ..." required> 
+            <br>
+
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" name="email" required placeholder="Enter a valid email address">
+            <br>
+
+            <label id="number-label" for="number">Your number (0-999):</label>
+            <input id="number" type="number" placeholder="Pick a random number" min="0" max="999">
+            <br>
+
+            <label for="dropdown">Sex:</label>
+            <input list="dropdown">
+            <datalist id="dropdown">
+              <option value="Male">
+              <option value="Female">
+              <option value="other">
+            </datalist>
+            <br>
+
+            <label for="browsers">Preferable browser:</label>
+            <input type="radio" name="browsers" value="chrome" checked>Chrome</input>
+            <input type="radio" name="browsers" value="safari">Safari</input>
+            <input type="radio" name="browsers" value="opera">Opera</input>
+            <input type="radio" name="browsers" value="internet_explorer">Internet Explorer</input>
+            <input type="radio" name="browsers" value="firefox">Firefox</input>
+            <br>
+
+            <label for="skills">Skills:</label>
+            <input type="checkbox" value="language1">HTML
+            <input type="checkbox" value="language2">CSS
+            <input type="checkbox" value="language3">PHP
+            <input type="checkbox" value="language4">RUBY
+            <input type="checkbox" value="language5">JS
+            <input type="checkbox" value="language6">React
+            <input type="checkbox" value="language7">other..
+            <br>
+
+            <label for="comments">I'd like to add:</label>
+            <br>
+            <textarea name="comments" rows="10" cols="50">
+              Let us to get know you better!
+            </textarea>
+            <br>
+
+            <button id="submit" type="submit">Push me!</button>
+
+          </form>
+        </div>  
+      </div>
+    </div>
+  </body>
+</html>
